@@ -1,0 +1,1 @@
+console.log("Rodando certo no script agora")
