@@ -50,6 +50,6 @@ function deleteUser(userId) {
 
 // addNewUser(newUser)
 // getUsers()
-// getUser(4)
+// getUser(1)
 // updateUser(5, updatedUser)
 // deleteUser(2)
