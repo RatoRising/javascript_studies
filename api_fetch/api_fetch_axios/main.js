@@ -21,10 +21,11 @@ function getUsers() {
 function getUser(userId) {
    axios.get(`${url}${userId}`)
       .then((response) => {
-         user_id.innerHTML = 'Id: ' + response.data.id
-         user_name.innerHTML = 'Name: ' + response.data.name
-         user_city.innerHTML = 'City: ' + response.data.city
-         user_avatar.src = response.data.avatar
+         let user = response.data
+         user_id.innerHTML = 'Id: ' + user.id
+         user_name.innerHTML = 'Name: ' + user.name
+         user_city.innerHTML = 'City: ' + user.city
+         user_avatar.src = user.avatar
       })
       .catch((error) => console.error(error))
 }
