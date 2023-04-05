@@ -48,3 +48,10 @@ console.log(sum)
 console.log(mul)
 console.log(div) // porque ele divide em ordem sequencial?
 console.log(noRep)
+
+// Using spread parameters for more than 1 parameter
+function sum (...args) {
+   let result = args.reduce((a, z) => a + z)
+   return result
+}
+console.log(sum(2, 3, 4, 5))

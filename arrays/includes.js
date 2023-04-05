@@ -23,3 +23,10 @@ console.log(Array.from(word))
 
 let a = [1, 2, 3].includes(200)
 console.log(a)
+
+// Check if a value exists in a string using both as parameters.
+function stringIncludes (strA, strB) {
+   let strAFiltered = (strA.toLowerCase().includes((strB.toLowerCase())))
+   return strAFiltered
+   }
+   console.log(stringIncludes('I drove to New York in a van with my friend', 'Friend'))

@@ -16,3 +16,7 @@ let pessoa = {
 let {nome:pessoaNome, sobrenome, idade = 0} = pessoa;
 
 console.log(pessoaNome, sobrenome, idade)
+
+const letSee = () => {
+   
+}

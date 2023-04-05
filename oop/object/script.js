@@ -41,6 +41,7 @@ const student3 = {
 
 
 // identificando o conteúdo dos objetos
+console.log('HERE IS WHAT I WANT');
 const chaves = Object.keys(student3);
 const valores = Object.values(student3);
 const entradas = JSON.stringify(Object.entries(student3));

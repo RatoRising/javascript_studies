@@ -21,10 +21,27 @@ let cars = [ { brand: 'fiat', year: 2015 }, { brand: 'bmw', year: 2018 }, { bran
 let byName = cars.sort((a, b) => a.brand.localeCompare(b.brand)); // organiza por nome, fazendo comparação em UTF-8
 // let byYear = cars.sort((a, b) => a.year - b.year); // Organiza por ano/número
 
-
 // cars.sort(function(a, b) {
 // 	return a.brand < b.brand ? -1 : a.brand > b.brand ? 1 : 0;
 // }); // Utiliza fórmula que compara a com b e se a for menor retrocede 1 e se for maior ascende 1, se for igual fica 0
 
 console.log(cars);
 
+
+// Ordering by properties
+const orderByString = (propName) => (a, z) => a[propName].localeCompare(z[propName]);
+const orderByNumber = (propName) => (a, z) => a[propName] - z[propName];
+
+const person1 = { name: 'aryan', height: 178 };
+const person2 = { name: 'kaush', height: 182 };
+const person3 = { name: 'dbhishek', height: 176 };
+const people = [ person1, person2, person3 ];
+const peopleSorted = people.sort(orderByNumber('height'));
+console.log(peopleSorted);
+
+const car1 = { brand: 'fiat', year: 2015, id: 5 };
+const car2 = { brand: 'bmw', year: 2018, id: 2 };
+const car3 = { brand: 'ferrari', year: 2020, id: 3 };
+const carsss = [ car1, car2, car3 ];
+const carsssSorted = carsss.sort(orderByString('brand'));
+console.log(carsssSorted);

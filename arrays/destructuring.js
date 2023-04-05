@@ -1,10 +1,10 @@
 let info = ['Rato Marrato', 'Rato', 'Marrato', '@ratomarrato'];
 
-//let [nomeCompleto, nome, instagram, sobrenome] = info;
-//console.log(nomeCompleto, nome, instagram, sobrenome);
+let [nomeCompleto, nome, instagram, sobrenome] = info;
+console.log(nomeCompleto, nome, instagram, sobrenome);
 
-let [nomeCompleto, , , instagram] = info;
-console.log(nomeCompleto, instagram);
+// let [nomeCompleto, , , instagram] = info;
+// console.log(nomeCompleto, instagram);
 
 
 

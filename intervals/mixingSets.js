@@ -4,4 +4,4 @@ const checking = () => console.log('checking')
 
 let intervalLogic = setInterval(checking, timeInterval)
 
-setTimeout( () => clearInterval(interval), timeOut)
+setTimeout( () => clearInterval(intervalLogic), timeOut)

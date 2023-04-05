@@ -37,3 +37,9 @@ setTimeout(retornar, 2000);
 let sobrenome = 'Marrato';
 let nomeCompleto = `${nome} ${sobrenome}`
 console.log(nomeCompleto)
+
+// Time to sleep
+const sleep = (time) => setTimeout(() => console.log('Sleeping now'), time)
+console.log('foo')
+sleep(1000);
+console.log('bar');
